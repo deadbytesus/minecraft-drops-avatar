@@ -1,0 +1,40 @@
+{
+  "name": "minecraft-drops-avatar",
+  "version": "1.0.0",
+  "description": "Fetch Minecraft skins directly from Mojang API and render them into algorithmic, chunky Drops-style pixel avatars.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup index.ts --format esm --dts --clean"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadbytesus/minecraft-drops-avatar.git"
+  },
+  "keywords": [
+    "minecraft",
+    "mojang-api",
+    "minecraft-skin",
+    "avatar-generator",
+    "canvas-render",
+    "drops-avatar",
+    "skin-fetcher",
+    "pixel-art",
+    "minecraft-avatar",
+    "mojang-textures"
+  ],
+  "author": "deadbytesus",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/deadbytesus/minecraft-drops-avatar/issues"
+  },
+  "homepage": "https://github.com/deadbytesus/minecraft-drops-avatar#readme",
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
