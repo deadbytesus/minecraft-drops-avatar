@@ -265,7 +265,10 @@ export function avDropsRenderSkin(skin: HTMLImageElement, ov: boolean): HTMLCanv
 export function loadImageFromUrl(url: string): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const img = new Image();
-    img.crossOrigin = "anonymous"; // Essential for reading pixel data via canvas later
+    const isExternal = /^(https?:)/i.test(url);
+    if (isExternal) { 
+      img.crossOrigin = "anonymous"; // Essential for reading pixel data via canvas later
+    }
     img.onload = () => resolve(img);
     img.onerror = () => reject(new Error("Could not load skin image asset"));
     img.src = url;

@@ -1,6 +1,6 @@
 {
   "name": "minecraft-drops-avatar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetch Minecraft skins directly from Mojang API and render them into algorithmic, chunky Drops-style pixel avatars.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
